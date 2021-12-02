@@ -1,0 +1,377 @@
+/* body{
+    padding: 0px;
+    margin: 0px;
+}
+.grid-container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.grid-item{
+    background: brown;
+} */
+
+
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
+nav {
+    padding: 1em 3.75em 0em 3.75em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.logo img{
+    height: 6.25em;
+}
+
+.search-box {
+    text-align: center;
+}
+
+.search-box input {
+    border: none;
+    padding: 0.25em 3em 0.25em 1em;
+    border-radius: 0.75em;
+    width: 50%;
+    height: 2.5em;
+    background-image: url('Img/search.png');
+    background-size: 1.5em;
+    background-position: 97% 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.search-box input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+}
+
+.search-box input:focus {
+    border: none;
+}
+
+.menu {
+    text-align: right;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 1.25em;
+    border-radius: 0.5em;
+    border: none;
+
+}
+
+.btn-cta {
+    background: #0540F2;
+    color: white;
+}
+
+
+
+.btn-filters {
+    background: none;
+    color: #0540F2;
+    margin-left: 1em;
+}
+
+.navless {
+    padding: 0em 3.75em;
+}
+
+.navless h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin: 3.75rem 0rem 1.5rem 0rem;
+}
+
+.titles {
+    position: relative;                 
+}
+
+.titles h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+    position: absolute;                 
+    bottom: 0;                         
+    right: 0; 
+}
+
+/* comienza noticia */
+
+.encabezado{
+    margin: 7.5em;
+}
+
+h2{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 3.8em;
+    color: rgba(43, 45, 66, 0,9);
+}
+
+.titular{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center; 
+}
+
+h6{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 1.25em;
+    color: rgba(141, 153, 174, 1);
+}
+
+.resumen{
+    padding: auto;
+    text-align: center;
+}
+
+p{
+    color: #0540F2;
+}
+
+.bibliografía{
+    display: grid;
+    grid-template-columns: 15% 10% 75%;
+}
+
+.bibliografía .subtitle-1 .fuente{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtitle-1{
+    padding: 3em;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color: rgba(43, 45, 66, 0,9);
+}
+
+.fuente{
+    padding: 3em;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color:rgba(14, 46, 141, 1);
+    text-align: left;
+}
+
+.compartir{
+    padding: 3em;
+    font-family: 'Ubuntu', sans-serif ;
+    font-size: 1em;
+    color: rgba(43, 45, 66, 0,9);
+    text-align: right;
+}          
+
+.img-noticia{
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo{
+    margin: 0em 22.25rem;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.body-1{
+    font-family: 'Lora', serif;
+    font-size: 1.06em;
+    color: rgba(43, 45, 66, 0,9);
+}
+
+/* inter de noticia */
+
+/* comienza publicidad de suscribción */
+
+.pub-susc{
+    background: #0540F2;
+    margin: 3em;
+    padding: auto;
+    border-radius: 0.5em;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicidad{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    background: none;
+    margin: 1em;
+    padding: 1em;
+}
+
+h4{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 2.18em;
+    color: rgba(255, 255, 255, 1);
+    padding: auto;
+    text-align: left;
+}
+
+.btn-susc{
+    background: #ffffff;
+    color: #0540F2;
+    margin: auto;
+}
+
+.button-pub{
+    display: flex;
+    align-items: center;
+    margin: 0em 4.5rem;
+}
+
+/* comienzan cards */
+
+.titulo-sec-1{
+    padding-right: 4em;
+    padding-left: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    display: inline-block;
+    position: relative;
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 2.18em;
+    color: #0540F2;
+    padding: auto;
+    text-align: left;
+}
+
+h3::after{
+    content:"";
+    position: absolute;
+    width: 29em;
+    height: 1px;
+    background-color: #0540F2;
+    top: 0.6em;
+    right:-32em;
+}
+
+h5{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 1.5em;
+    color: #0540F2;
+    padding: auto;
+    text-align: right;
+}
+
+.titulo-sec-2{
+    padding-right: 4em;
+    padding-left: 4em;
+    color: red;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 2em;
+}
+
+.card{
+    background: #FFFFFF;
+    padding: 1.5em;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5em;  
+    transition: 400ms ease-in all;
+    margin: 0.25em;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 24px rgba(0,0,0,0,08);
+    transform: translateY(-6px)scale(1.02);
+}
+
+.text-card{
+    padding: 1em;
+}
+
+.card .photo-card img{
+    width: 100%;
+    border-radius: 0.37em;
+}
+
+.section-card{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #EE4266;
+}
+
+.body_1-card{
+    font-family: 'lora', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.93em;
+    line-height: 1.62em;
+}
+
+.logo-publicidad{
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+/* comienza footer */
+
+.footer{
+    background:white;
+    padding: 1em;
+    margin: 0em 0em;
+}
+
+.footer .logofooter{
+    display: flex;
+    justify-content: center;
+    height: 3.25em;
+}
+
+.body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.81em;
+    color:#0540F2;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin: 1em;
+}
+
+.redes{
+    display: flex;
+    justify-content:center;
+    padding: .5em;
+    margin: 0em;
+}
+
+.redes img{
+    padding: 0.5em;
+}
