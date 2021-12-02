@@ -459,3 +459,38 @@ nav {
     margin: auto 4.5em auto auto;
     white-space: nowrap;
 }
+
+/* comienza footer */
+
+.footer{
+    background:white;
+    padding: 1em;
+    margin: 0em 0em;
+}
+
+.footer .logofooter{
+    display: flex;
+    justify-content: center;
+    height: 3.25em;
+}
+
+.body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.81em;
+    color:#0540F2;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin: 1em;
+}
+
+.redes{
+    display: flex;
+    justify-content:center;
+    padding: .5em;
+    margin: 0em;
+}
+
+.redes img{
+    padding: 0.5em;
+}
