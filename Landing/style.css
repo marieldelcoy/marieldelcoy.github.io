@@ -1,3 +1,83 @@
+/* body{
+    padding: 0px;
+    margin: 0px;
+}
+.grid-container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.grid-item{
+    background: brown;
+} */
+
+
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
+nav {
+    padding: 1em 3.75em 0em 3.75em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.logo img{
+    height: 6.25em;
+}
+
+
+.menu {
+    text-align: right;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 1.25em;
+    border-radius: 0.5em;
+    border: none;
+
+}
+
+.btn-cta {
+    background: #0540F2;
+    color: white;
+}
+
+h6{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 1.25em;
+    color: rgba(141, 153, 174, 1);
+}
+
+.enlaces-nav{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+justify-content: space-around;
+
+}
+
+.CTA{
+    padding: 1em 3.75em 0em 3.75em;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.CTA .descripcion{
+    background: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
 body{
     font-family: sans-serif;
     background: #FAFBFF;
