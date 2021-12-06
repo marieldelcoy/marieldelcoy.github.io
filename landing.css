@@ -62,238 +62,267 @@ display: flex;
 flex-direction: row;
 justify-content: flex-end;
 justify-content: space-around;
-
 }
+
+/* Registro*/
 
 .CTA{
     padding: 1em 3.75em 0em 3.75em;
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .CTA .descripcion{
-    background: blanchedalmond;
     display: flex;
     flex-direction: column;
 }
 
-body{
-    font-family: sans-serif;
-    background: #FAFBFF;
+.registro{
+    background: white;
+    margin: 3em;
+    padding: 3em;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card{
-    width: 368px;
-    height: 324px;
-    left: 107px;
-    top: 3108px;
-    background: #FFFFFF;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    text-align: center;
+.registro .input{
     display: flex;
-}
-
-.card:hover{
-    box-shadow: 0px 4px 24px rgba(0,0,0,0,08);
-    transform: translateY(-6px)scale(1.02);
-}
-
-.titulo{
+    flex-direction: column;
+    justify-content: space-between;
     
-    width: 502px;
-    height: 114px;
-    left: 818px;
-    top: 2274px;
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 49px;
-    line-height: 57px;
-
-color: #0540F2;
 }
 
-.descripcion{
-
-    color: 2B2D42;
-    width: 502px;
-    height: 99px;
-    left: 818px;
-    top: 2408px;
-
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 33px;
-    letter-spacing: 0.005em;
+input{
+    background: #FFFFFF; 
+    border: none; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); 
+    width:100%;
+    height: 2em;
 }
 
-.titulo1{
-    width: 313px;
-height: 28px;
-left: 892px;
-top: 2547px;
-/* H5 */
-font-family: Ubuntu;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-color: #0583F2
-}
-
-.descripcion1{
-    width: 409px;
-height: 66px;
-left: 892px;
-top: 2583px;
-
-/* Subtitle_1 */
-
-font-family: Ubuntu;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-letter-spacing: 0.0015em;
-
-/* neutral/body */
-
-color: rgba(43, 45, 66, 0.9);
-}
-
-.bloque1{
+.btn-registro{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 1.25em;
+    border-radius: 0.5em;
+    border: none;
     display: flex;
     justify-content: center;
 }
 
-.titulocentro{
-    width: 628px;
-    height: 114px;
-    left: 393px;
-    top: 2942px;
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 49px;
-    line-height: 57px;
-    text-align: center;
-    color: #0540F2;
-}
+/* H's*/
 
-.textocard{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.005em;
-    color: rgba(43, 45, 66, 0.9);
-}
-
-.pic{
-    width: 72px;
-    height: 72px;
-    left: 148px;
-    top: 160px;
-    background: url(.png);
-}
-
-.nombre{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.0015em;
-    color: #8D99AE;
-}
-
-.puesto{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.001em;
-    color: #C4C4C4;
-}
-
-.navigation{
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sitios{
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.boton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 20px;
-    background: #0540F2;
-    border-radius: 8px;
-}
-
-.texto1{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 40px;
-    text-align: center;
-    color: #0540F2;
-}
-
-.textogrande{
+h2 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 70px;
-    letter-spacing: 0.005em;
-    color: rgba(43, 45, 66, 0.9);
+    font-size: 3.81em;
+    margin: 0rem;
 }
 
-.intro{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 33px;
-    letter-spacing: 0.005em;
-    color: rgba(43, 45, 66, 0.9);
-}
-
-.b1{
-    display: flex;
-    text-align: left;
-}
-
-.texto11{
+h3 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
-    line-height: 40px;
-    text-align: center;
+    font-size: 3.06em;
+    margin: 0rem;
     color: #0540F2;
 }
 
-@media only screen and (max-width: 700px){
-    nav{
-        background: 
-    }
+h4 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.19em;
+    margin: 0rem;
+    color: #0540F2;
 }
+
+h5 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0rem;
+    color: #0540F2;
+}
+
+h6{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 1.25em;
+    color:rgba(43, 45, 66, 0,9); 
+}
+
+.sub-1{
+    font-family: Ubuntu;         
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0rem;
+    color: #2B2D42;
+}
+
+.sub-2{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0rem;
+    color: #0540F2;
+}
+
+/* Fuentes bibliográficas y*/
+
+.bibliografia{
+    display: flex;
+    justify-content: center;
+}
+
+.fuentes{ 
+    padding: 3em;
+    margin: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-inf{
+    padding: 1em 3.75em 0em 3.75em;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.informacion{
+    display:flex;
+    flex-direction: column;
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+}
+
+.indicaciones{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.numero{
+    width: 40%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.icono{
+    padding: 1em;
+    width: 40;
+}
+
+.pasos{
+    display: flex;
+    flex-direction: column;
+}
+
+.paso{
+    display: flex;
+    justify-content: space-between;
+}
+
+.opiniones{
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* comienza publicidad*/
+
+.pub-susc{
+    background: #0540F2;
+    margin: 3em;
+    padding: auto;
+    border-radius: 0.5em;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicidad{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    background: none;
+    margin: 1em;
+    padding: 1em;
+}
+
+.btn-susc{
+    background: #ffffff;
+    color: #0540F2;
+    margin: auto;
+}
+
+.button-pub{
+    display: flex;
+    align-items: center;
+    margin: 0em 4.5rem;
+}
+
+.h4-white{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.19em;
+    margin: 0rem;
+    color: #ffffff;
+}
+
+/* comienza footer*/
+
+.footer{
+    background:white;
+    padding: 1em;
+    margin: 0em 0em;
+}
+
+.footer .logofooter{
+    display: flex;
+    justify-content: center;
+    height: 3.25em;
+}
+
+.body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.81em;
+    color:#0540F2;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin: 1em;
+}
+
+.redes{
+    display: flex;
+    justify-content:center;
+    padding: .5em;
+    margin: 0em;
+}
+
+.redes img{
+    padding: 0.5em;
+}
+
+
