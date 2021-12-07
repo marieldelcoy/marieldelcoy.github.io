@@ -417,7 +417,7 @@ footer .gray {
 }
 
 .cards-container .news-card {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .cards-container .first {
@@ -843,7 +843,7 @@ footer .gray {
         margin: 1em auto 2.25em;
     }
     .titles {
-        margin: 3em 0em 1em 0em;
+        margin: 3.5em 0em 1em 0em;
     }
     .titles .subtitle-1 {
         padding-right: 0.5rem;
@@ -859,44 +859,17 @@ footer .gray {
     .cards-container {
         flex-wrap: nowrap;
         overflow-x: auto;
-        /* Para que se vea la sombra */
-        padding: 5em 0;
-        margin: -5em 0;
-    }
-    .cards-container::-webkit-scrollbar {
-        display: none;
     }
     .cards-container .news-card {
-        flex: 0 0 auto;
-    }
-    .cards-container .promoted-card {
         flex: 0 0 auto;
     }
     .cards-container h6 {
         line-height: 125%;
         font-weight: bold;
     }
-    .hero-container {
-        display: flex;
-        margin-top: 1.5em;
-    }
-    .hero-container h6 {
-        line-height: 125%;
-        font-weight: bold;
-        margin: 1rem 0rem;
-    }
     .news-card {
         width: 85%;
     }
-    .promoted-card {
-        width: 85%;
-    }
-    .promoted-card .info h6 {
-        padding-bottom: 0.75rem;
-    }
-    .promoted-card {
-        margin-left: 5%;
-    } 
     footer {
         padding-bottom: 10em;
     }
@@ -925,51 +898,6 @@ footer .gray {
         color: #3B4C68;
         text-decoration: none;
     }
-    #stories {
-        color: #0540F2;;
-    }
-    .story-container {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding: 5em 0;
-        margin: -4em 0em -3.5em 0em;
-    }
-    .story-container::-webkit-scrollbar {
-        display: none;
-    }
-    .story {
-        flex: 0 0 auto;
-        margin-right: 1.5em;
-    }
-    .story .icon {
-        width: 3.25em;
-        height: 2.5em;
-    }
-    .story img {
-        width: 1.5em;
-    }
-    #filter.search {
-        display: flex;
-    }
-    #filter.search input {
-        width: 100%;
-    }
 }
 
-/* Comienza responsivo de landing */
-
-/* Responsivo-Nav */
-
-@media only screen and (max-width: 600px){
-
-    .nav-landing .logo{
-        justify-content: center;
-    }
-
-    .nav-landing .menu{
-        display: none;
-    }
-}
-
-/* Responsivo-Nav */
-
+    
