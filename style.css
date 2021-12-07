@@ -898,4 +898,29 @@ footer .gray {
         color: #3B4C68;
         text-decoration: none;
     }
+    #stories {
+        color: #0540F2;;
+    }
+    .story-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 1em 0em 1.5em 0em;
+    }
+    .story {
+        flex: 0 0 auto;
+        margin-right: 1.5em;
+    }
+    .story .icon {
+        width: 3.25em;
+        height: 2.5em;
+    }
+    .story img {
+        width: 1.5em;
+    }
+    #filter.search {
+        display: flex;
+    }
+    #filter.search input {
+        width: 100%;
+    }
 }
