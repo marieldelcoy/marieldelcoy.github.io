@@ -975,4 +975,14 @@ footer .gray {
         color: rgba(43, 45, 66, 0.9);
         font-weight: bold;
     }
+
+    .nav-landing .menu{
+        display: none;
+    }
+
+    .nav-landing .logo{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
 }
