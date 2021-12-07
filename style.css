@@ -860,9 +860,6 @@ footer .gray {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
-    .cards-container::-webkit-scrollbar {
-        display: none;
-    }
     .cards-container .news-card {
         flex: 0 0 auto;
     }
