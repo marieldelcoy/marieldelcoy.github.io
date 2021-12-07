@@ -954,5 +954,25 @@ footer .gray {
     #filter.search input {
         width: 100%;
     }
-
+    .middle-section h6 {
+        margin: 0rem 0 1.5rem;
+        text-align: center;
+        font-weight: bold;
+        color: #0540F2;
+    }
+    .landing-card-section {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5em 0;
+        margin: -5em 0;
+    }
+    .landing-card-section::-webkit-scrollbar {
+        display: none;
+    }
+    .landing-card #feedback{
+        margin: 0 0 1rem 0;
+        color: rgba(43, 45, 66, 0.9);
+        font-weight: bold;
+    }
 }
