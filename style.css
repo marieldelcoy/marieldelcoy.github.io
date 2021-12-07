@@ -860,6 +860,9 @@ footer .gray {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
+    .cards-container::-webkit-scrollbar {
+        display: none;
+    }
     .cards-container .news-card {
         flex: 0 0 auto;
     }
@@ -869,6 +872,9 @@ footer .gray {
     }
     .news-card {
         width: 85%;
+    }
+    footer {
+        padding-bottom: 10em;
     }
     .bottom-navbar {
         width: 100%;
@@ -888,6 +894,11 @@ footer .gray {
         flex-direction: column;
     }
     .bottom-navbar-item img {
+        align-self: center;
         width: 1.5em;
+    }
+    .bottom-navbar .caption {
+        color: #3B4C68;
+        text-decoration: none;
     }
 }
