@@ -924,3 +924,26 @@ footer .gray {
         width: 100%;
     }
 }
+
+/* Comienza responsivo de landing */
+
+/* Responsivo-Nav */
+
+@media only screen and (max-width: 600px){
+
+    .nav-landing .logo{
+        justify-content: center;
+    }
+
+    .nav-landing .menu{
+        display: none;
+    }
+}
+
+/* Responsivo-Nav */
+
+@media only screen and (max-width: 600px){
+    .nav-landing .hero-landing{
+        grid-template-columns: 100%;
+    }
+}
