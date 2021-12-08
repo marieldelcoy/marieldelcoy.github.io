@@ -956,33 +956,6 @@ footer .gray {
     #filter.search input {
         width: 100%;
     }
-    .middle-section h6 {
-        margin: 0rem 0 1.5rem;
-        text-align: center;
-        font-weight: bold;
-        color: #0540F2;
-    }
-    .landing-card-section {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding: 5em 0;
-        margin: -5em 0;
-    }
-    .landing-card {
-        flex: 0 0 auto;
-        width: 60vw;
-    }
-    .landing-card-section::-webkit-scrollbar {
-        display: none;
-    }
-    .landing-card #feedback{
-        margin: 0 0 0.5rem 0;
-        color: rgba(43, 45, 66, 0.9);
-        font-weight: bold;
-    }
-
-    /* empieza tania*/
     .hero-landing {
         display: flex;
         flex-direction: column;
@@ -1021,10 +994,14 @@ footer .gray {
         margin: 0 3%;
         object-fit: contain;
     }
+    .logos .phone #últimos-logos{
+        margin-bottom: 4.5em;
+    }    
     #últimos-logos{
         padding-top: 1em;
         margin-bottom: 4.5em;
     }
+<<<<<<< HEAD
 
     /* empieza mariel*/
 
@@ -1105,6 +1082,116 @@ footer .gray {
         flex-direction: column;
     }
 
+=======
+    .first-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-section h6.section-title {
+        color:rgba(5, 64, 242, 1);
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .first-section .subtitle-1 {
+        margin-bottom: 3.5rem;
+        text-align: center;
+    }
+    .first-section .right img {
+        width: 100%;
+        text-align: center;
+        margin-top: -3em;
+        margin-left: -4em;
+        overflow: hidden;
+    }
+    .list-item {
+        margin-bottom: 1.25em;
+    }
+    .list-item img {
+        align-self: center;
+        width: 1.5em;
+    }
+    .list-item h6 {
+        color: #0583F2;
+        font-weight: bold;
+    }
+    .list-item img {
+        margin-right: 1.5em;
+    }
+    .list-item .caption {
+        font-weight: bold;
+        color: rgba(43, 45, 66, 0.9);
+    }
+    .list-item .text-part h6 {
+        margin-bottom: 0.5rem;
+    }
+    .first-section .list .list-item:nth-of-type(1) .text-part h6 {
+        margin-bottom: 0;
+    }
+    .first-section .list .list-item:nth-of-type(2) img {
+        margin-top: 0.5em;
+        align-self: flex-start;
+    }
+    .first-section .list .list-item:nth-of-type(3) .text-part h6 {
+        margin-bottom: 0;
+    }
+    .first-section .btn-primary {
+        align-self: center;
+        margin: 2.25em 0 4.5em 0;
+        width: auto;
+    }
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-section h6.section-title {
+        color:rgba(5, 64, 242, 1);
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .second-section h6 {
+        font-weight: normal;
+    }
+    .second-section .subtitle-1 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .second-section .left img {
+        margin: 0;
+        width: 100%;
+    }
+    .second-section .list-item img {
+        margin-top: 0.5em;
+        align-self: flex-start;
+    }
+    .middle-section h6 {
+        margin: 0rem 0 1.5rem;
+        padding-top: 4.5rem;
+        text-align: center;
+        font-weight: bold;
+        color: #0540F2;
+    }
+    .landing-card-section {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5em 0;
+        margin: -5em 0;
+    }
+    .landing-card {
+        flex: 0 0 auto;
+        width: 60vw;
+    }
+    .landing-card-section::-webkit-scrollbar {
+        display: none;
+    }
+    .landing-card #feedback{
+        margin: 0 0 0.5rem 0;
+        color: rgba(43, 45, 66, 0.9);
+        font-weight: bold;
+    }
+>>>>>>> b32a9f3a891d673f837c4307b18b8766b3cddcf2
 }
 
 
