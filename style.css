@@ -772,6 +772,12 @@ footer .gray {
 .no-bottom-margin {
     margin-bottom: 0;
 }
+#segundo-parrafo{
+    color: #2B2D42;
+}
+#últimos-logos{
+    margin-bottom: 4.5em;
+}
 
 @media only screen and (min-width: 600px) {
     /* Artículos */
@@ -981,4 +987,48 @@ footer .gray {
         color: rgba(43, 45, 66, 0.9);
         font-weight: bold;
     }
+    .texts .subtitle-2{
+        font-weight: bold;
+    }
+    .texts h4{
+        color: rgba(43, 45, 66, 0.9);
+    }
+    .hero-landing {
+        display: flex;
+        flex-direction: column;
+        padding: -5em;
+        margin: 1em;
+    }
+    .texts h4.phone{
+        margin: none; 
+        padding: none;
+    }
+    .hero-landing .CTA{
+        display: none;
+    }
+    .CTA .CTA-form{
+        display: none;
+    }
+    .client-logos{
+        margin-top: 4.5em;
+    }
+    .client-logos h6.phone{
+        color:rgba(5, 64, 242, 1);
+        font-weight: bold;
+        padding: 2em;
+    }
+    .logos .first .computer{
+        display: none;
+    }
+    .logos .computer{
+        display: none;
+    }
+    .client-logos .btn-primary .phone{
+        text-align: none;
+    }
+    .logos .phone #últimos-logos{
+        margin-bottom: 4.5em;
+    }
 }
+
+
