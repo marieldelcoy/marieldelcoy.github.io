@@ -772,12 +772,6 @@ footer .gray {
 .no-bottom-margin {
     margin-bottom: 0;
 }
-#segundo-parrafo{
-    color: #2B2D42;
-}
-#últimos-logos{
-    margin-bottom: 4.5em;
-}
 
 @media only screen and (min-width: 600px) {
     /* Artículos */
@@ -989,47 +983,46 @@ footer .gray {
     }
 
     /* empieza tania*/
-    
-    .texts .subtitle-2{
-        font-weight: bold;
+    .hero-landing {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-landing .texts {
+        margin-right: 0;
+    }
+    .hero-landing .texts > * {
+        margin-bottom: 1rem;
     }
     .texts h4{
         color: rgba(43, 45, 66, 0.9);
     }
-    .hero-landing {
-        display: flex;
-        flex-direction: column;
-        padding: -5em;
-        margin: 1em;
+    .texts .subtitle-2{
+        font-weight: bold;
     }
-    .texts h4.phone{
-        margin: none; 
-        padding: none;
+    #segundo-parrafo{
+        color: rgba(43, 45, 66, 0.9);
+        margin-bottom: 2.5rem;
     }
     .hero-landing .CTA{
-        display: none;
-    }
-    .CTA .CTA-form{
         display: none;
     }
     .client-logos{
         margin-top: 4.5em;
     }
-    .client-logos h6.phone{
+    .client-logos h6 {
         color:rgba(5, 64, 242, 1);
         font-weight: bold;
-        padding: 2em;
+        margin: 0 0 2.5rem 0;
     }
-    .logos .first .computer{
-        display: none;
+    .client-logos .first {
+        margin-bottom: 2em;
     }
-    .logos .computer{
-        display: none;
+    .logos img {
+        margin: 0 3%;
+        object-fit: contain;
     }
-    .client-logos .btn-primary .phone{
-        text-align: none;
-    }
-    .logos .phone #últimos-logos{
+    #últimos-logos{
+        padding-top: 1em;
         margin-bottom: 4.5em;
     }
 }
