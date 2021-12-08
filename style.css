@@ -1001,88 +1001,8 @@ footer .gray {
         padding-top: 1em;
         margin-bottom: 4.5em;
     }
-<<<<<<< HEAD
 
-    /* empieza mariel*/
 
-    .first-section{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .first-section .left{
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-    
-    .left h3 {
-        text-align: center;
-        font-size: 30px;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .list h5{
-        text-align: center;
-        font-size: 20px;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .right h3{
-        text-align: center;
-        font-size: 30px;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-    .list{
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .list-item .text-part{
-        display: flex;
-        flex-direction: column; 
-        
-    }
-    .text-part{
-        display: flex;
-        flex-direction: column;    
-    }
-
-    .subtitle-1{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .second-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    
-    }
-
-    .list-item{
-        align-items: center;
-        
-    }
-
-    .right{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .list-item{
-        display: flex;
-        flex-direction: column;
-    }
-
-=======
     .first-section {
         display: flex;
         flex-direction: column;
@@ -1191,7 +1111,7 @@ footer .gray {
         color: rgba(43, 45, 66, 0.9);
         font-weight: bold;
     }
->>>>>>> b32a9f3a891d673f837c4307b18b8766b3cddcf2
+
 }
 
 
