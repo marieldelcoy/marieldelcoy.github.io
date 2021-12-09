@@ -288,10 +288,12 @@ footer .gray {
 
 .news-card a {
     text-decoration: none;
+    color: rgba(43, 45, 66, 0.9);
 }
 
 .promoted-card a {
     text-decoration: none;
+    color: rgba(43, 45, 66, 0.9);
 }
 
 .news-card {
