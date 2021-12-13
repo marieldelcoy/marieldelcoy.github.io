@@ -37,7 +37,7 @@
                 </a>
             </div>
             <div class="menu">
-                <h6 class="computer"><a href="landing-1.html">Ver Noticias</a></h6>
+                <h6 onclick="mixpanel.track('ver-noticias');" class="computer"><a href="landing-1.html">Ver Noticias</a></h6>
                 <h6 class="computer"><a href="index.html">Suscripción</a></h6>
                 <h6 class="computer">Servicios</h6>
                 <button class="btn-secondary computer">Inicia Sesión</button>
@@ -68,12 +68,38 @@
                         <label for="confirmar-contraseña" class="subtitle-2">Confirmar Contraseña</label>
                         <input type="password" name="Confirmar Contraseña" id="confirmar-contraseña">
                     </form>
-                    <div onclick="mixpanel.track('button-click-primary');" class="button computer">
+                    <div onclick="mixpanel.track('user-registered');registrado()" class="button computer">
                         <button class="btn-primary">Registrarme</button>
                     </div>
                 </div>
                 <div onclick="mixpanel.track('button-click-primary');" class="button phone">
-                    <button class="btn-primary">Registrarme</button>
+                    <button class="btn-primary btn-modal">Registrarme</button>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="registerModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h5>Quiero Registrarme</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="CTA-form">
+                            <label for="nombre" class="subtitle-2">Nombre</label>
+                            <input type="text" name="Nombre" id="nombre">
+                            <label for="email" class="subtitle-2">Correo</label>
+                            <input type="email" name="email" id="email">
+                            <label for="password" class="subtitle-2">Contraseña</label>
+                            <input type="password" name="password" id="password">
+                            <label for="confirmar-contraseña" class="subtitle-2">Confirmar Contraseña</label>
+                            <input type="password" name="Confirmar Contraseña" id="confirmar-contraseña">
+                        </form>
+                        <div onclick="mixpanel.track('user-registered');" class="button">
+                            <button class="btn-primary" id="registerButton">Registrarme</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -114,7 +140,7 @@
                     <img src="img/landing/el pais.png" alt="">
                     <img src="img/landing/the economist.png" alt="">
                 </div>
-                <button onclick="mixpanel.track('button-click-primary');" class="btn-primary computer">Quiero Registrarme</button>
+                <button onclick="mixpanel.track('button-click-primary');scrollToRegister()" class="btn-primary computer">Quiero Registrarme</button>
             </div>
 
             <section class="first-section">
@@ -159,7 +185,7 @@
                 <div class="right computer">
                     <img src="img/landing/celular.png" alt="">
                 </div>
-                <button class="btn-primary phone">Registrarme</button>
+                <button onclick="mixpanel.track('button-click-primary');" class="btn-primary phone btn-modal">Registrarme</button>
 
             </section>
 
@@ -268,7 +294,8 @@
                     <h4>No pierdas más tiempo y deja que la información te encuentre</h4>
                     <h6>¡Empieza tu día con noticias elegidas solo para ti!</h6>
                 </div>
-                <button onclick="mixpanel.track('button-click-secondary');" class="btn-secondary">Empieza gratis desde hoy</button>
+                <button onclick="mixpanel.track('button-click-secondary');scrollToRegister()" class="btn-secondary computer btn-banner">Empieza gratis desde hoy</button>
+                <button onclick="mixpanel.track('button-click-secondary');" class="btn-secondary phone btn-modal btn-banner">Empieza gratis desde hoy</button>
             </div>
         </div>
 
@@ -298,13 +325,13 @@
         </footer>
 
         <div class="bottom-navbar phone">
-            <div class="bottom-navbar-item">
+            <div onclick="mixpanel.track('ver-noticias');" class="bottom-navbar-item">
                 <a href="landing-1.html" class="caption">
                     <img src="img/landing/navbar_1.png" alt="">
                     Noticias
                 </a>
             </div>
-            <div class="bottom-navbar-item">
+            <div onclick="mixpanel.track('ver-landing');" class="bottom-navbar-item">
                 <a href="index.html" class="caption">
                     <img src="img/landing/navbar_2.png" alt="">
                     Suscripción
@@ -326,4 +353,58 @@
 
     </body>
     
+    <script>
+        
+        function scrollToRegister() {
+            var element = document.getElementsByClassName("CTA-form");
+
+            element[0].scrollIntoView({behavior: "smooth"});
+        }
+
+        function registrado() {
+            alert("¡Te has registrado con éxito!");
+        }
+
+        // Get the modal
+        var modal = document.getElementById("registerModal");
+
+        // Get the button that opens the modal
+        var btn1 = document.getElementsByClassName("btn-modal")[0];
+        var btn2 = document.getElementsByClassName("btn-modal")[1];
+        var btn3 = document.getElementsByClassName("btn-modal")[2];
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var btnRegister = document.getElementById("registerButton");
+
+        // When the user clicks the button, open the modal 
+        btn1.onclick = function() {
+            modal.style.display = "flex";
+        }
+        btn2.onclick = function() {
+            modal.style.display = "flex";
+        }
+        btn3.onclick = function() {
+            modal.style.display = "flex";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        btnRegister.onclick = function() {
+            modal.style.display = "none";
+
+            registrado();
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
 </html>
