@@ -68,12 +68,16 @@
                         <label for="confirmar-contraseña" class="subtitle-2">Confirmar Contraseña</label>
                         <input type="password" name="Confirmar Contraseña" id="confirmar-contraseña">
                     </form>
+                    <div onclick="mixpanel.track('buttin-click-primary');" class="button computer">
                     <div class="button computer">
                         <button class="btn-primary">Registrarme</button>
                     </div>
+                    </div>
                 </div>
+                <div onclick="mixpanel.track('button-click');" class="button phone">
                 <div class="button phone">
                     <button class="btn-primary">Registrarme</button>
+                </div>
                 </div>
             </div>
 
@@ -114,7 +118,9 @@
                     <img src="img/landing/el pais.png" alt="">
                     <img src="img/landing/the economist.png" alt="">
                 </div>
+                <div onclick="mixpanel.track('button-click');" class="button computer">
                 <button class="btn-primary computer">Quiero Registrarme</button>
+            </div>
 
             </div>
 

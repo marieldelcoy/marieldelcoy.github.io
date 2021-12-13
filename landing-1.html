@@ -38,9 +38,11 @@
                     </a>
                 </div>
             </div>
+            <div onclick="mixpanel.track('nav-click');" class="nav">
             <div class="search computer">
                 <input placeholder="¿Qué estás buscando?">
                 <button class="btn-secondary">Mis Categorías</button>
+            </div>
             </div>
             <div class="menu computer">
                 <a href="index.html">
@@ -115,23 +117,25 @@
                 <button class="btn-secondary"><img src="img/landing/icon-filter.png"></button>
             </div>
             <div class="hero-container">
-                <div class="news-card">
-                    <a href="noticias.html" target="_blank">
-                        <div class="photo">
-                            <img src="img/cards/hero-card.png" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="news-details">
-                                <p class="overline">Tecnología</p>
+                <div onclick="mixpanel.track('news-click-principal');" class="">
+                    <div class="news-card">
+                        <a href="noticias.html" target="_blank">
+                            <div class="photo">
+                                <img src="img/cards/hero-card.png" alt="">
                             </div>
-                            <h2 class="computer">Tecnología + Diseño + Desarrollo Sostenible: Un combo ganador</h2>
-                            <h6 class="phone">Tecnología + Diseño + Desarrollo Sostenible: Un combo ganador</h6>
-                            <p class="body-1">Hoy, más que nunca, podemos ver el delicado equilibrio que 
-                                existe en la sociedad actual debido a la gran interconexión existente...  
-                                <span class="link">(leer más)</span>
-                            </p>
-                        </div>
-                    </a>
+                            <div class="info">
+                                <div class="news-details">
+                                    <p class="overline">Tecnología</p>
+                                </div>
+                                <h2 class="computer">Tecnología + Diseño + Desarrollo Sostenible: Un combo ganador</h2>
+                                <h6 class="phone">Tecnología + Diseño + Desarrollo Sostenible: Un combo ganador</h6>
+                                <p class="body-1">Hoy, más que nunca, podemos ver el delicado equilibrio que 
+                                    existe en la sociedad actual debido a la gran interconexión existente...  
+                                    <span class="link">(leer más)</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-news-feed computer">
                     <hr class="thick">
