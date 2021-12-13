@@ -69,15 +69,11 @@
                         <input type="password" name="Confirmar Contraseña" id="confirmar-contraseña">
                     </form>
                     <div onclick="mixpanel.track('button-click-primary');" class="button computer">
-                    <div class="button computer">
                         <button class="btn-primary">Registrarme</button>
-                    </div>
                     </div>
                 </div>
                 <div onclick="mixpanel.track('button-click-primary');" class="button phone">
-                    <div class="button phone">
-                        <button class="btn-primary">Registrarme</button>
-                    </div>
+                    <button class="btn-primary">Registrarme</button>
                 </div>
             </div>
 
@@ -118,10 +114,7 @@
                     <img src="img/landing/el pais.png" alt="">
                     <img src="img/landing/the economist.png" alt="">
                 </div>
-                <div onclick="mixpanel.track('button-click-primary');" class="button computer">
-                <button class="btn-primary computer">Quiero Registrarme</button>
-            </div>
-
+                <button onclick="mixpanel.track('button-click-primary');" class="btn-primary computer">Quiero Registrarme</button>
             </div>
 
             <section class="first-section">
@@ -137,12 +130,10 @@
                         <div class="list-item">
                             <img src="img/landing/1.png" alt="">
                             <div class="text-part">
-                                <div onclick="mixpanel.track('liga-click');" class="">
-                                    <h5 class="computer">Ingresa a <a href="landing-1.html">TheGlobal.com</a></h5>
-                                    <h6 class="phone">Ingresa a <a href="landing-1.html">TheGlobal.com</a></h6>
-                                    <div class="subtitle-1 computer"></div>
-                                    <div class="caption phone"></div>
-                                </div>
+                                <h5 class="computer">Ingresa a <a onclick="mixpanel.track('liga-click');" href="landing-1.html">TheGlobal.com</a></h5>
+                                <h6 class="phone">Ingresa a <a onclick="mixpanel.track('liga-click');" href="landing-1.html">TheGlobal.com</a></h6>
+                                <div class="subtitle-1 computer"></div>
+                                <div class="caption phone"></div>
                             </div>
                         </div>
                         <div class="list-item">
@@ -168,9 +159,8 @@
                 <div class="right computer">
                     <img src="img/landing/celular.png" alt="">
                 </div>
-    
                 <button class="btn-primary phone">Registrarme</button>
-                
+
             </section>
 
             <section class="second-section">
@@ -278,9 +268,7 @@
                     <h4>No pierdas más tiempo y deja que la información te encuentre</h4>
                     <h6>¡Empieza tu día con noticias elegidas solo para ti!</h6>
                 </div>
-                <div onclick="mixpanel.track('button-click-secundary');" class="banner">
-                    <button class="btn-secondary">Empieza gratis desde hoy</button>
-                </div>
+                <button onclick="mixpanel.track('button-click-secondary');" class="btn-secondary">Empieza gratis desde hoy</button>
             </div>
         </div>
 
